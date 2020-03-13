@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 12</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="26" cy="26" r="26"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-1" y="-1" width="54" height="54">
+            <rect x="-1" y="-1" width="54" height="54" fill="white"></rect>
+            <use xlink:href="#path-1" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Book-Lab-Test" transform="translate(-527.000000, -1603.000000)" fill-rule="nonzero">
+            <g id="Group-16" transform="translate(188.000000, 1381.000000)">
+                <g id="Group-17" transform="translate(0.000000, 223.000000)">
+                    <g id="Group-12" transform="translate(340.000000, 0.000000)">
+                        <use id="Oval" stroke="#BBCCCA" mask="url(#mask-2)" stroke-width="2" stroke-dasharray="4" xlink:href="#path-1"></use>
+                        <g id="003-test-tube" transform="translate(20.000000, 13.000000)" fill="#2B5145">
+                            <path d="M0,0 L0,4.23016355 L1.75,5.15985105 L1.75,23.6796875 C1.75,26.0617981 3.68798828,28 6.0703125,28 C8.45263672,28 10.390625,26.0620117 10.390625,23.6796875 L10.390625,5.15985105 L12.140625,4.23016355 L12.140625,0 L0,0 Z M10.5,3.24386595 L8.75,4.17355345 L8.75,23.6796875 C8.75,25.1573181 7.5479431,26.359375 6.0703125,26.359375 C4.5926819,26.359375 3.390625,25.1573181 3.390625,23.6796875 L3.390625,22.4035034 L4.90371705,22.4035034 L4.90371705,20.7628784 L3.390625,20.7628784 L3.390625,17.7369079 L4.90371705,17.7369079 L4.90371705,16.0962829 L3.390625,16.0962829 L3.390625,13.0703125 L4.90371705,13.0703125 L4.90371705,11.4296875 L3.390625,11.4296875 L3.390625,8.40371705 L4.90371705,8.40371705 L4.90371705,6.76309205 L3.390625,6.76309205 L3.390625,4.17355345 L1.640625,3.24386595 L1.640625,1.640625 L10.5,1.640625 L10.5,3.24386595 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
