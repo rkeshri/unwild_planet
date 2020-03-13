@@ -76,7 +76,7 @@ const PackageDetailComponent = props => {
         <div class="container-fluid">
           <div class="row justify-content-center">
             <div class="col-xl-4 col-md-4 col-xs-12">
-            <h3>Description</h3>
+              <h3>Description</h3>
             </div>
             <div class="col-lg-8 col-md-9">
               <div class="destination_info">
@@ -96,63 +96,15 @@ const PackageDetailComponent = props => {
                   believable. If you are going to use a passage of Lorem Ipsum,
                   you need to be sure there isn't anything embarrassing.
                 </p>
-                <div class="single_destination">
-                  <h4>Day-01</h4>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words.
-                  </p>
-                </div>
-                <div class="single_destination">
-                  <h4>Day-02</h4>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words.
-                  </p>
-                </div>
-                <div class="single_destination">
-                  <h4>Day-03</h4>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words.
-                  </p>
-                </div>
               </div>
+
               <div class="bordered_1px"></div>
             </div>
             <div class="col-xl-4 col-md-4 col-xs-12">
-            <h3>What you'll do</h3>
-            </div>
-            <div class="col-lg-8 col-md-9">
-              <div class="destination_info">               
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don't look
-                  even slightly believable. If you are going to use a passage of
-                  Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing.
-                </p>
-                <p>
-                  Variations of passages of lorem Ipsum available, but the
-                  majority have suffered alteration in some form, by injected
-                  humour, or randomised words which don't look even slightly
-                  believable. If you are going to use a passage of Lorem Ipsum,
-                  you need to be sure there isn't anything embarrassing.
-                </p>
-                
-              </div>
-              <div class="bordered_1px"></div>
-            </div>
-            <div class="col-xl-4 col-md-4 col-xs-12">
-            <h3>What's included</h3>
+              <h3>What you'll do</h3>
             </div>
             <div class="col-lg-8 col-md-9">
               <div class="destination_info">
-                <h3>Description</h3>
                 <p>
                   There are many variations of passages of Lorem Ipsum
                   available, but the majority have suffered alteration in some
@@ -168,54 +120,92 @@ const PackageDetailComponent = props => {
                   believable. If you are going to use a passage of Lorem Ipsum,
                   you need to be sure there isn't anything embarrassing.
                 </p>
-                <div class="single_destination">
-                  <h4>Day-01</h4>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words.
-                  </p>
+              </div>
+              <div class="bordered_1px"></div>
+            </div>
+            <div class="col-xl-4 col-md-4 col-xs-12">
+              <h3>What's included</h3>
+            </div>
+            <div class="col-lg-8 col-md-9">
+              <div class="row">
+                <div class="col-xl-4 col-md-4 col-xs-6">
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <img
+                        src={require("../../assets/img/common/accommodation.png")}
+                        alt="wetreat logo"
+                        height="100px"
+                        width="100px"
+                      />
+                      <h5>Accommodation</h5>
+                      <p>2 nights in a cabin</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="single_destination">
-                  <h4>Day-02</h4>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words.
-                  </p>
+                <div class="col-xl-4 col-md-4 col-xs-6">
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <img
+                        src={require("../../assets/img/common/food.png")}
+                        alt="wetreat logo"
+                        height="100px"
+                        width="100px"
+                      />
+                      <h5>Food</h5>
+                      <p>2 breakfasts, 2 dinners, 1 lunch, snacks, dessert</p>
+                    </div>
+                  </div>
                 </div>
-                <div class="single_destination">
-                  <h4>Day-03</h4>
-                  <p>
-                    There are many variations of passages of Lorem Ipsum
-                    available, but the majority have suffered alteration in some
-                    form, by injected humour, or randomised words.
-                  </p>
+                <div class="col-xl-4 col-md-4 col-xs-6">
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <img
+                        src={require("../../assets/img/common/drink.png")}
+                        alt="wetreat logo"
+                        height="100px"
+                        width="100px"
+                      />
+                      <h5>Drink</h5>
+                      <p>Water, tea, coffee</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-4 col-xs-6">
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <img
+                        src={require("../../assets/img/common/transport.png")}
+                        alt="wetreat logo"
+                        height="100px"
+                        width="100px"
+                      />
+                      <h5>Transport</h5>
+                      <p>3 car rides</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-4 col-xs-6">
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <img
+                        src={require("../../assets/img/common/equipment.png")}
+                        alt="wetreat logo"
+                        height="100px"
+                        width="100px"
+                      />
+                      <h5>Equipment</h5>
+                      <p>Sports equipment, outdoor gear</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="bordered_1px"></div>
             </div>
             <div class="col-xl-4 col-md-4 col-xs-12">
-            <h3>Description</h3>
+              <h3>Your itinerary</h3>
             </div>
             <div class="col-lg-8 col-md-9">
               <div class="destination_info">
-                <h3>Description</h3>
-                <p>
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don't look
-                  even slightly believable. If you are going to use a passage of
-                  Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing.
-                </p>
-                <p>
-                  Variations of passages of lorem Ipsum available, but the
-                  majority have suffered alteration in some form, by injected
-                  humour, or randomised words which don't look even slightly
-                  believable. If you are going to use a passage of Lorem Ipsum,
-                  you need to be sure there isn't anything embarrassing.
-                </p>
                 <div class="single_destination">
                   <h4>Day-01</h4>
                   <p>
