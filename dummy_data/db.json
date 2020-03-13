@@ -1,0 +1,91 @@
+{
+  "packages": [
+    {
+      "id": 1,
+      "title": "Village living in the Himalaya",
+      "days": "5",
+      "rating": "3.5",
+      "price": "75000",
+      "images": [
+        {
+          "url": "https://i.picsum.photos/id/10/2500/1667.jpg"
+        },
+        {
+          "url": "https://i.picsum.photos/id/1/5616/3744.jpg"
+        },
+        {
+          "url": "https://i.picsum.photos/id/100/2500/1656.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Private 3 full days in Mumbai",
+      "days": "3",
+      "rating": "2.5",
+      "price": "45000",
+      "images": [
+        {
+          "url": "https://i.picsum.photos/id/1002/4312/2868.jpg"
+        },
+        {
+          "url": "https://i.picsum.photos/id/1003/1181/1772.jpg"
+        },
+        {
+          "url": "https://i.picsum.photos/id/1005/5760/3840.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Art and architecture in Ajanta alora",
+      "days": "1",
+      "rating": "4.5",
+      "price": "8500",
+      "images": [
+        {
+          "url": "https://i.picsum.photos/id/10/2500/1667.jpg"
+        },
+        {
+          "url": "https://i.picsum.photos/id/1/5616/3744.jpg"
+        },
+        {
+          "url": "https://i.picsum.photos/id/100/2500/1656.jpg"
+        }
+      ]
+    }
+  ],
+  "package_details": [
+    {
+      "id": 1,
+      "title": "Village living in the Himalaya",
+      "sub_title": "Soak in the Himalayan village lifestyle in Madmaheswar Valley, UK,India",
+      "description": "We’ll stay in family homes in Madmaheswar Valley, a serene Himalayan valley full of exotic nature and wildlife. The people of the valley started this local community tourism project to offer us a look into their culture and traditions. We’ll hear from a village storyteller, take a guided tour of the village and its landmarks, witness traditional dance, trek to an ancient temple, and learn about the region’s farming techniques. A cook will teach us traditional Garhwali recipes and an artisan will show us how to make Himalayan bamboo handicrafts.",
+      "what_includes": [
+        "Meals",
+        "Transport",
+        "Guide"
+      ],
+      "itinerary_details": [
+        {
+          "day": "day1",
+          "title": "Listen to a local storyteller",
+          "small_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut lorem ipsum. Quisque pretium eget justo quis molestie. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed volutpat feugiat urna lobortis efficitur. Pellentesque sit amet. ",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id sapien vitae urna tincidunt laoreet. Maecenas ut odio vitae velit faucibus pharetra a non purus. Phasellus faucibus magna eget consectetur interdum. Donec ac eleifend sapien. Ut arcu orci, ultricies non laoreet vitae, imperdiet id nisi. Suspendisse potenti. Aliquam pretium justo id ante tincidunt, vel volutpat mauris cursus. Sed bibendum, massa nec tristique iaculis, purus quam tempor libero, eu varius nisi urna vel massa. Fusce hendrerit libero erat, sollicitudin condimentum arcu volutpat quis. Mauris sed pretium augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Morbi congue lectus a augue convallis, in luctus felis semper. Proin sollicitudin quam vitae ornare porttitor. Morbi imperdiet ligula in dictum dapibus. Quisque placerat sollicitudin diam eget molestie. Fusce pretium velit magna, sed mollis massa elementum eget. Nulla eget malesuada nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus venenatis sollicitudin purus eu semper. Donec quis lectus a neque varius ultricies eget in purus. Integer orci risus, rutrum et elit iaculis, eleifend sagittis tellus. Sed sit amet massa ut arcu commodo cursus. Aliquam iaculis magna ante, quis vulputate nunc suscipit vitae.Maecenas lobortis dui vitae lectus efficitur, quis dictum lacus malesuada. Integer euismod varius neque, eu aliquet tortor tincidunt in. Nam ultricies metus sit amet ultricies tincidunt. Nullam aliquam diam non dictum luctus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam pellentesque viverra nunc, nec malesuada risus condimentum at. Morbi finibus tortor vel odio tincidunt, sagittis maximus nulla accumsan. Maecenas mattis aliquet dolor sed ultricies. Nunc nec enim sit amet nunc consequat lacinia.Sed quis accumsan arcu, ac finibus mi. Nam a lorem nec mauris euismod fringilla et sit amet turpis. Donec urna tellus, fermentum in lacus vitae, aliquet venenatis ex. Maecenas libero felis, interdum id finibus quis, vestibulum sit amet erat. Etiam at faucibus urna, non semper diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec lobortis tellus lacus, nec iaculis nisl ultrices ut. ",
+          "images": [
+            {
+              "url": "https://i.picsum.photos/id/10/2500/1667.jpg"
+            },
+            {
+              "url": "https://i.picsum.photos/id/1/5616/3744.jpg"
+            },
+            {
+              "url": "https://i.picsum.photos/id/100/2500/1656.jpg"
+            }
+          ],
+          "cost_info": 8000
+        }
+      ]
+    }
+  ]
+}
