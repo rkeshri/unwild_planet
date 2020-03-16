@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './components/Root';
 import * as serviceWorker from './serviceWorker';
 
+
 import './assets/css/bootstrap.min.css';
 import './assets/css/owl.carousel.min.css';
 import './assets/css/magnific-popup.css';
@@ -18,6 +19,12 @@ import './assets/css/style.css';
 // import './assets/css/theme-default.css';
 // import './assets/css/themify-icons.css';
 
+//attach bootstrap file here
+// global.jQuery = require('jquery');
+// require('bootstrap');
+//import '../node_modules/bootstrap3';
+
+//import '../node_modules/jquery';
 //attach JS files here
 // import './assets/js/vendor/modernizr-3.5.0.min.js';
  //import './assets/js/vendor/jquery-1.12.4.min.js';

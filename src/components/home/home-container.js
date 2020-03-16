@@ -4,9 +4,9 @@ import ToGoComponent from "./to-go-component";
 import PopularDestination from "./popular-destination-component";
 import PopularPlaces from "./popular-place-component";
 import NewsLetter from "./newsletter-component";
-import $ from "jquery";
+//import $ from "jquery";
 
-import Utility from "../../utility/index";
+//import Utility from "../../utility/index";
 
 
 export default class HomeContainer extends Component {
