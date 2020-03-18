@@ -16,34 +16,7 @@ import './assets/css/animate.css';
 import './assets/css/slick.css';
 import './assets/css/slicknav.css';
 import './assets/css/style.css';
-// import './assets/css/theme-default.css';
-// import './assets/css/themify-icons.css';
 
-//attach bootstrap file here
-// global.jQuery = require('jquery');
-// require('bootstrap');
-//import '../node_modules/bootstrap3';
-
-//import '../node_modules/jquery';
-//attach JS files here
-// import './assets/js/vendor/modernizr-3.5.0.min.js';
- //import './assets/js/vendor/jquery-1.12.4.min.js';
-// import './assets/js/popper.min.js';
-// import './assets/js/bootstrap.min.js';
-// import './assets/js/owl.carousel.min.js';
-// import './assets/js/isotope.pkgd.min.js';
-// import './assets/js/waypoints.min.js';
-// import './assets/js/jquery.counterup.min.js';
-// import './assets/js/imagesloaded.pkgd.min.js';
-// import './assets/js/scrollIt.js';
-// import './assets/js/jquery.scrollUp.min.js';
-// import './assets/js/wow.min.js';
-// import './assets/js/nice-select.min.js';
-// import './assets/js/jquery.slicknav.min.js';
-// import './assets/js/jquery.magnific-popup.min.js';
-// import './assets/js/plugins.js';
-// import './assets/js/gijgo.min.js';
-// import './assets/js/slick.min.js';
 
 
 ReactDOM.render(<App />, document.getElementById('root'));

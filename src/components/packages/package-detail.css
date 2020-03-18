@@ -8,3 +8,17 @@
         background: ghostwhite;
         z-index: 1;
     }
+
+    .btnMonths{
+        padding:10px !important;
+        background-color: #ccc;
+        margin:1px;
+    }
+    .amenities{
+        padding:5px;
+        background-color: darkgray;
+        margin:1px;
+    }
+    .package-description span{
+        font-size: 14px !important;
+    }

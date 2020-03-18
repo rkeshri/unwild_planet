@@ -1,7 +1,6 @@
 import React from "react";
 
-const CardComponent = props => {
-  // alert("in function=====" + JSON.stringify(props, null, 4));
+const CardComponent = props => { 
   return (
     <React.Fragment>
       {props !== [] ? (

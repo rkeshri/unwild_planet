@@ -1,7 +1,8 @@
 import React from "react";
+import "./package-detail.css";
 
 const PackageDetailComponent = props => {
-  console.log("======" + JSON.stringify(props, null, 4));
+ 
   return (
     <React.Fragment>
       {props.packageState.package_details !== [] &&
@@ -18,24 +19,16 @@ const PackageDetailComponent = props => {
       <div className="container-fluid">
         {props.packageState.package_details !== [] &&
         props.packageState.package_details !== undefined ? (
-          <div className="row destination_text overlay">
-            {/* {console.log(
-              "======props.packageState.package_details" +
-                JSON.stringify(
-                  props.packageState.package_details.what_includes,
-                  null,
-                  4
-                )
-            )} */}
+          <div className="row destination_text overlay">            
             <div className="col-xl-4 col-md-4 col-xs-12 text-center">
               <h4>{props.packageState.package_details.remark}</h4>
               <p>{props.packageState.package_details.location}</p>
-              <p>{props.packageState.package_details.reviews}</p>
+              <p>Reviews -{props.packageState.package_details.reviews}</p>
               <div className="row">
                 {props.packageState.package_details.what_includes.map(
                   (item, key) => {
                     return (
-                      <button type="button" className="btn col-xl-4 col-md-4">
+                      <button type="button" className="btn col-xl-4 col-md-4 amenities">
                         {item.amenities}
                       </button>
                     );
@@ -43,7 +36,7 @@ const PackageDetailComponent = props => {
                 )}
               </div>
             </div>
-            <div className="col-xl-8 col-md-8 col-xs-12 text-center">
+            <div className="col-xl-8 col-md-8 col-xs-12 text-center package-description">
               <h5>
                 Join us on this all inclusive 2 nights package! CAPACITY MAX 4
                 PEOPLE!!!
@@ -288,19 +281,18 @@ const PackageDetailComponent = props => {
             <React.Fragment>
               {/**********************************Months lists*****************/}
               <div className="row">
-                <div className="col-xl-8 col-md-8 col-xs-12">
-                  <a className="btn btn-lg  col-md-2">March 2020</a>
-                  <a className="btn  btn-lg col-md-2">March 2020</a>
-                  <a className="btn  btn-lg col-md-2">April 2020</a>
-                  <a className="btn  btn-lg col-md-2">May 2020</a>
-                  <a className="btn  btn-lg col-md-2">June 2020</a>
-                  <a className="btn  btn-lg col-md-2">July 2020</a>
-                  <a className="btn  btn-lg col-md-2">August 2020</a>
-                  <a className="btn  btn-lg col-md-2">September 2020</a>
-                  <a className="btn  btn-lg col-md-2">October 2020</a>
-                  <a className="btn  btn-lg col-md-2">November 2020</a>
-                  <a className="btn  btn-lg col-md-2">December 2020</a>
-                  <a className="btn  btn-lg col-md-2">January 2021</a>
+                <div className="col-xl-8 col-md-8 col-xs-12">                
+                  <a className="btn  btn-lg btnMonths col-md-2">March 2020</a>
+                  <a className="btn  btn-lg  btnMonths col-md-2">April 2020</a>
+                  <a className="btn  btn-lg  btnMonths col-md-2">May 2020</a>
+                  <a className="btn  btn-lg btnMonths col-md-2">June 2020</a>
+                  <a className="btn  btn-lg btnMonths col-md-2">July 2020</a>
+                  <a className="btn  btn-lg btnMonths col-md-2">August 2020</a>
+                  <a className="btn  btn-lg btnMonths col-md-2">September 2020</a>
+                  <a className="btn  btn-lg btnMonths col-md-2">October 2020</a>
+                  <a className="btn  btn-lg btnMonths col-md-2">November 2020</a>
+                  <a className="btn  btn-lg btnMonths col-md-2">December 2020</a>
+                  <a className="btn  btn-lg btnMonths col-md-2">January 2021</a>
                 </div>
               </div>
 

@@ -8,7 +8,7 @@ export default class Header extends Component {
   }
 
   render() {
-    let href = "#";
+    
     return (
       <header>
         <div class="header-area ">
