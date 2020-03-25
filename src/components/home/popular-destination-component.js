@@ -38,7 +38,7 @@ export default class PopularDestinationComponent extends Component {
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="section_title text-center mb_70">
-                <h3>Popular Destination</h3>
+                <h3>{this.props.title}</h3>
                 <p>
                   Suffered alteration in some form, by injected humour or good
                   day randomised booth anim 8-bit hella wolf moon beard words.

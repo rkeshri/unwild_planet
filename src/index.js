@@ -2,6 +2,7 @@ import React from '../node_modules/react';
 import ReactDOM from 'react-dom';
 import App from './components/Root';
 import * as serviceWorker from './serviceWorker';
+//import jQuery from 'jquery';
 
 
 import './assets/css/bootstrap.min.css';
@@ -16,6 +17,10 @@ import './assets/css/animate.css';
 import './assets/css/slick.css';
 import './assets/css/slicknav.css';
 import './assets/css/style.css';
+
+//JS
+//import './assets/js/jquery-1.12.4.min.js';
+//import './assets/js/owl.carousel.min.js';
 
 
 

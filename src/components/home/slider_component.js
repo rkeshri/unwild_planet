@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import '../../assets/css/owl.carousel.min.css';
 
 export default class searchPopupComponent extends Component {
     constructor(props) {
@@ -8,7 +9,8 @@ export default class searchPopupComponent extends Component {
 
     render() {
         return (
-            <div class="slider_area">
+            // <!-- slider_area_start -->
+    <div class="slider_area">
         <div class="slider_active owl-carousel">
             <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
                 <div class="container">
@@ -23,7 +25,7 @@ export default class searchPopupComponent extends Component {
                     </div>
                 </div>
             </div>
-            <div class="single_slider  d-flex align-items-center slider_bg_2 overlay">
+            {/* <div class="single_slider  d-flex align-items-center slider_bg_2 overlay">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-xl-12 col-md-12">
@@ -49,6 +51,10 @@ export default class searchPopupComponent extends Component {
                     </div>
                 </div>
             </div>
+        */}
+       
+       
+       
         </div>
 
     </div>
