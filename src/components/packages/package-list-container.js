@@ -3,7 +3,7 @@ import global from "../../global";
 import axios from "axios";
 import SliderComponent from "../home/slider_component";
 import PackageListComponent from "./package-list-component";
-import $ from "jquery";
+//import $ from "jquery";
 import "./package-detail.css";
 
 export default class PackageListContainer extends Component {
@@ -11,9 +11,11 @@ export default class PackageListContainer extends Component {
     super(props);
     this.state = {
       package_status: true,
-      availability_status: false
+      availability_status: false,
+      Slidervalue: 30
     };
   }
+ 
 
   componentDidMount = () => {
     // let package_id = this.props.match.params.id;
@@ -54,6 +56,13 @@ export default class PackageListContainer extends Component {
     this.setState({ package_status: false, availability_status: true });
   };
 
+  handleChange = (value) => {
+    //alert("===value==="+value)
+    this.setState({
+      Slidervalue: value
+    })
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -61,6 +70,7 @@ export default class PackageListContainer extends Component {
         <PackageListComponent
           packageState={this.state}
           showAvailability={this.showAvailability}
+          handleChange={this.handleChange}
           {...this.props}
         />
       </React.Fragment>

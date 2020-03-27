@@ -8,7 +8,6 @@ export default class Header extends Component {
   }
 
   render() {
-    
     return (
       <header>
         <div class="header-area ">
@@ -18,7 +17,14 @@ export default class Header extends Component {
                 <div class="row align-items-center">
                   <div class="col-xl-2 col-lg-2">
                     <div class="logo">
-                      <a href="index.html">
+                      <a
+                        onClick={() =>
+                          Utility.HandlePageClick(
+                            this.props,
+                            "home"
+                          )
+                        }
+                      >
                         <img src="img/logo.png" alt="" />
                       </a>
                     </div>
@@ -28,15 +34,40 @@ export default class Header extends Component {
                       <nav>
                         <ul id="navigation">
                           <li>
-                            <a class="active" href="index.html">
+                            <a
+                              class="active"
+                              onClick={() =>
+                                Utility.HandlePageClick(
+                                  this.props,
+                                  "home"
+                                )
+                              }
+                            >
                               home
                             </a>
                           </li>
                           <li>
-                            <a href="about.html">About</a>
+                            <a
+                              onClick={() =>
+                                Utility.HandlePageClick(
+                                  this.props,
+                                  "about"
+                                )
+                              }
+                            >
+                              About
+                            </a>
                           </li>
                           <li>
-                            <a class="" href="travel_destination.html">
+                            <a
+                              class=""
+                              onClick={() =>
+                                Utility.HandlePageClick(
+                                  this.props,
+                                  "/"
+                                )
+                              }
+                            >
                               Destination
                             </a>
                           </li>
@@ -61,15 +92,42 @@ export default class Header extends Component {
                             </a>
                             <ul class="submenu">
                               <li>
-                                <a href="blog.html">blog</a>
+                                <a
+                                  onClick={() =>
+                                    Utility.HandlePageClick(
+                                      this.props,
+                                      "/"
+                                    )
+                                  }
+                                >
+                                  blog
+                                </a>
                               </li>
                               <li>
-                                <a href="single-blog.html">single-blog</a>
+                                <a
+                                  onClick={() =>
+                                    Utility.HandlePageClick(
+                                      this.props,
+                                      "/"
+                                    )
+                                  }
+                                >
+                                  single-blog
+                                </a>
                               </li>
                             </ul>
                           </li>
                           <li>
-                            <a href="contact.html">Contact</a>
+                            <a
+                              onClick={() =>
+                                Utility.HandlePageClick(
+                                  this.props,
+                                  "/"
+                                )
+                              }
+                            >
+                              Contact
+                            </a>
                           </li>
                         </ul>
                       </nav>

@@ -9,7 +9,7 @@ export default class Utility extends Component {
     //     history.push('/'+target);
     // }
     static HandlePageClick(e, target) {
-        // alert(JSON.stringify((e)))
+        // alert("target"+target+'==='+JSON.stringify((e)))
         // e.history.push(target);
         // alert("hh" + JSON.stringify(e));
         // if(e.componentprops == undefined)
