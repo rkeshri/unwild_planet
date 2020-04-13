@@ -1,6 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"); */
 /* line 1, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_extend.scss */
+
+
+/*******************Attach font here*********************/
+@font-face {
+  font-family: 'Roboto';  
+  src: url('./../fonts/roboto/Roboto-Light.ttf');  
+}
 .flex-center-start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,7 +33,7 @@
 /* Large Mobile :480px. */
 /* line 6, ../../Arafath/CL/December/231. Travel-02/HTML/scss/theme-default.scss */
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Roboto", roboto, sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -2566,7 +2573,7 @@ h3 {
 
 /* line 29, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_where_to_go.scss */
 .where_togo_area .search_wrap .input_field {
-  width: 220px;
+  width: 430px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6691,3 +6698,79 @@ h6 {
 .pd-15{
 padding: 15px;
 }
+.react-date-picker__inputGroup__input{
+  min-width: 20px !important;
+}
+
+.date_input_field input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  /* border: 1px solid #363E52; */
+  padding-left: 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+.react-date-picker__wrapper{
+  border: 1px solid #363E52 !important;
+  border-radius: 5px !important;
+}
+.react-date-picker__inputGroup__input react-date-picker__inputGroup__year{
+width:43px !important
+}
+.react-date-picker__clear-button react-date-picker__button{
+ color: #fff !important;
+}
+
+/****************************Slider CSS strats here*********************************/
+
+.slick-slide slick-active slick-current{
+  width:30% !important
+
+}
+
+
+.slick-track{
+  width:100% !important
+}
+.slick-dots li.slick-active button:before {
+  color: #881798 !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #881798;
+}
+
+/* .slick-initialized .slick-slide{
+  width:1030px !important
+} */
+
+.slick-slide div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"]{
+  padding:0 !important
+}
+
+/***************************home page search box( TOGo component)********************************/
+.MuiFormControl-marginNormal{
+  margin-top: 0 !important;
+}
+.MuiFormLabel-root {
+  color: #fff !important  ;
+  padding: 0;
+  font-size: 14px;
+}
+
+/*******************************Modal fade*************************/
+.modal.fade .modal-dialog { 
+  transform: translate(0,0) !important;
+ 
+}
+
+.my-modal {
+  width: 90vw;    /* Occupy the 90% of the screen width */
+  max-width: 90vw;
+} 

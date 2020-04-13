@@ -1,12 +1,18 @@
 import React from "react";
+//import Slider from "react-slick";
+
+
+
+
 
 const CardComponent = props => { 
+  //console.log("props==="+JSON.stringify(props))
   return (
     <React.Fragment>
       {props !== [] ? (
-        props.data.map((item, key) => {
-          return (
-            <div className="col-lg-4 col-md-6">
+        props.data.map((item) => {
+          return (         
+          
               <div className="single_destination">
                 <div className="thumb">
                   <img src={item.images[0].url} alt="" />
@@ -16,18 +22,23 @@ const CardComponent = props => {
                     {item.title} <a href="#"> Rating- {item.rating}</a>{" "}
                   </p>
                 </div>
-                {/* <div className="content"> */}
+               
                   <p className="d-flex align-items-center">
                    days- {item.days} <a href="#"> Price- {item.price}</a>{" "}
                   </p>
-                {/* </div> */}
+                
               </div>
-            </div>
+              
+            
           );
         })
       ) : (
         <h1>No Packages found</h1>
       )}
+
+
+
+
     </React.Fragment>
   );
 };

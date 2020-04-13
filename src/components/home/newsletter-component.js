@@ -10,29 +10,29 @@ export default class NewsLetterComponent extends Component {
     render() {
         return (
 
-            <div class="newletter_area overlay">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-10">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <div class="newsletter_text">
+            <div className="newletter_area overlay">
+            <div className="container">
+                <div className="row justify-content-center align-items-center">
+                    <div className="col-lg-10">
+                        <div className="row align-items-center">
+                            <div className="col-lg-5">
+                                <div className="newsletter_text">
                                     <h4>Subscribe Our Newsletter</h4>
                                     <p>Subscribe newsletter to get offers and about
                                         new places to discover.</p>
                                 </div>
                             </div>
-                            <div class="col-lg-7">
-                                <div class="mail_form">
-                                    <div class="row no-gutters">
-                                        <div class="col-lg-9 col-md-8">
-                                            <div class="newsletter_field">
+                            <div className="col-lg-7">
+                                <div className="mail_form">
+                                    <div className="row no-gutters">
+                                        <div className="col-lg-9 col-md-8">
+                                            <div className="newsletter_field">
                                                 <input type="email" placeholder="Your mail" />
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-4">
-                                            <div class="newsletter_btn">
-                                                <button class="boxed-btn4 " type="submit" >Subscribe</button>
+                                        <div className="col-lg-3 col-md-4">
+                                            <div className="newsletter_btn">
+                                                <button className="boxed-btn4 " type="submit" >Subscribe</button>
                                             </div>
                                         </div>
                                     </div>

@@ -10,13 +10,13 @@ export default class Header extends Component {
   render() {
     return (
       <header>
-        <div class="header-area ">
-          <div id="sticky-header" class="main-header-area">
-            <div class="container-fluid">
-              <div class="header_bottom_border">
-                <div class="row align-items-center">
-                  <div class="col-xl-2 col-lg-2">
-                    <div class="logo">
+        <div className="header-area ">
+          <div id="sticky-header" className="main-header-area">
+            <div className="container-fluid">
+              <div className="header_bottom_border">
+                <div className="row align-items-center">
+                  <div className="col-xl-2 col-lg-2">
+                    <div className="logo">
                       <a
                         onClick={() =>
                           Utility.HandlePageClick(
@@ -29,13 +29,13 @@ export default class Header extends Component {
                       </a>
                     </div>
                   </div>
-                  <div class="col-xl-6 col-lg-6">
-                    <div class="main-menu  d-none d-lg-block">
+                  <div className="col-xl-6 col-lg-6">
+                    <div className="main-menu  d-none d-lg-block">
                       <nav>
                         <ul id="navigation">
                           <li>
                             <a
-                              class="active"
+                              className="active"
                               onClick={() =>
                                 Utility.HandlePageClick(
                                   this.props,
@@ -60,7 +60,7 @@ export default class Header extends Component {
                           </li>
                           <li>
                             <a
-                              class=""
+                              className=""
                               onClick={() =>
                                 Utility.HandlePageClick(
                                   this.props,
@@ -71,11 +71,11 @@ export default class Header extends Component {
                               Destination
                             </a>
                           </li>
-                          <li>
+                          {/* <li>
                             <a href="#">
-                              pages <i class="ti-angle-down"></i>
+                              pages <i className="ti-angle-down"></i>
                             </a>
-                            <ul class="submenu">
+                            <ul className="submenu">
                               <li>
                                 <a href="destination_details.html">
                                   Destinations details
@@ -85,12 +85,12 @@ export default class Header extends Component {
                                 <a href="elements.html">elements</a>
                               </li>
                             </ul>
-                          </li>
+                          </li> */}
                           <li>
                             <a href="#">
-                              blog <i class="ti-angle-down"></i>
+                              blog <i className="ti-angle-down"></i>
                             </a>
-                            <ul class="submenu">
+                            <ul className="submenu">
                               <li>
                                 <a
                                   onClick={() =>
@@ -117,7 +117,7 @@ export default class Header extends Component {
                               </li>
                             </ul>
                           </li>
-                          <li>
+                          {/* <li>
                             <a
                               onClick={() =>
                                 Utility.HandlePageClick(
@@ -128,61 +128,61 @@ export default class Header extends Component {
                             >
                               Contact
                             </a>
-                          </li>
+                          </li> */}
                         </ul>
                       </nav>
                     </div>
                   </div>
-                  <div class="col-xl-4 col-lg-4 d-none d-lg-block">
-                    <div class="social_wrap d-flex align-items-center justify-content-end">
-                      <div class="number">
+                  <div className="col-xl-4 col-lg-4 d-none d-lg-block">
+                    <div className="social_wrap d-flex align-items-center justify-content-end">
+                      <div className="number">
                         <p>
                           {" "}
-                          <i class="fa fa-phone"></i> 10(256)-928 256
+                          <i className="fa fa-phone"></i> 10(256)-928 256
                         </p>
                       </div>
-                      <div class="social_links d-none d-xl-block">
+                      <div className="social_links d-none d-xl-block">
                         <ul>
                           <li>
                             <a href="#">
                               {" "}
-                              <i class="fa fa-instagram"></i>{" "}
+                              <i className="fa fa-instagram"></i>{" "}
                             </a>
                           </li>
                           <li>
                             <a href="#">
                               {" "}
-                              <i class="fa fa-linkedin"></i>{" "}
+                              <i className="fa fa-linkedin"></i>{" "}
                             </a>
                           </li>
                           <li>
                             <a href="#">
                               {" "}
-                              <i class="fa fa-facebook"></i>{" "}
+                              <i className="fa fa-facebook"></i>{" "}
                             </a>
                           </li>
                           <li>
                             <a href="#">
                               {" "}
-                              <i class="fa fa-google-plus"></i>{" "}
+                              <i className="fa fa-google-plus"></i>{" "}
                             </a>
                           </li>
                         </ul>
                       </div>
                     </div>
                   </div>
-                  <div class="seach_icon">
+                  {/* <div className="seach_icon">
                     <a
                       data-toggle="modal"
                       data-target="#exampleModalCenter"
                       href="#"
                     >
-                      <i class="fa fa-search"></i>
+                      <i className="fa fa-search"></i>
                     </a>
-                  </div>
-                  <div class="col-12">
-                    <div class="mobile_menu d-block d-lg-none"></div>
-                  </div>
+                  </div> */}
+                  {/* <div className="col-12">
+                    <div className="mobile_menu d-block d-lg-none"></div>
+                  </div> */}
                 </div>
               </div>
             </div>

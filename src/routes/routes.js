@@ -17,6 +17,7 @@ import SinglePageLayout from '../layouts/singlepagelayout';
 import HomeContainer from "../components/home/home-container";
 import PackageDetailContainer from '../components/packages/package-detail-container';
 import PackageListContainer from '../components/packages/package-list-container';
+import AboutContainer from '../components/about/about-container';
 
 
 
@@ -31,8 +32,9 @@ const Root = (props) => (
 
                     <Route exact path="/" render={(props) => (<SinglePageLayout children={HomeContainer} {...props} />)}/>
                     <Route exact path="/home" render={(props) => (<SinglePageLayout children={HomeContainer} {...props} />)}/>
-                    <Route exact path="/packages/:id" render={(props) => (<SinglePageLayout children={PackageDetailContainer} {...props} />)}/>
-                    <Route exact path="/packages/list/:id" render={(props) => (<SinglePageLayout children={PackageListContainer} {...props} />)}/>
+                    <Route exact path="/about" render={(props) => (<SinglePageLayout children={AboutContainer} {...props} />)}/>
+                    <Route exact path="/packages/context=:id" render={(props) => (<SinglePageLayout children={PackageDetailContainer} {...props} />)}/>
+                    <Route exact path="/packages/type=:id" render={(props) => (<SinglePageLayout children={PackageListContainer} {...props} />)}/>
                     
 
                 </Switch>
