@@ -10,8 +10,8 @@ export default class NewsLetterComponent extends Component {
     render() {
         return (
 
-            <div className="newletter_area overlay">
-            <div className="container">
+            <div className="newletter_area overlay mb_70">
+            <div className="container ">
                 <div className="row justify-content-center align-items-center">
                     <div className="col-lg-10">
                         <div className="row align-items-center">

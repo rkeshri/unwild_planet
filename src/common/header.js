@@ -25,7 +25,7 @@ export default class Header extends Component {
                           )
                         }
                       >
-                        <img src="img/logo.png" alt="" />
+                        <img src={require("../assets/img/unwild_planet_logo_Brown.svg")} alt="Unwild Planet Logo" />
                       </a>
                     </div>
                   </div>
