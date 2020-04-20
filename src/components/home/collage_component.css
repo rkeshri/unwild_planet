@@ -1,4 +1,4 @@
-.gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
+/* .gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
 .gallery_box{ padding:0;display: flow-root;}
 
 .gallery_box li:hover img {
@@ -21,4 +21,46 @@
 .gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
 .gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
 .gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
-.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)}
+.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)} */
+
+.card_text {
+    background-color: rgb(0, 0, 0) !important;
+    /* background-color:#755010 !important; */
+    bottom: 0px !important;
+    left: 0px !important;
+    position: absolute !important;
+    right: 0px !important;
+    width: 96%;
+}
+.card_txt {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    background-color: rgb(34, 34, 34) !important;
+    border-radius: 0px 0px 16px 16px !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 600 !important;
+    min-height: 76px !important;
+    padding: 16px !important;
+}
+
+.bottom-part {
+    position: absolute;
+    padding: 0 30px 13px;
+    /* left: 0;
+    right: 0; */
+    bottom: 0;
+    background: linear-gradient(rgba(144,144,144,0.5),rgba(0,0,0,0.5));
+    width: 90%;
+}
+
+.bottom-part span {
+    color: #ffffff;   
+    transition: color .2s linear;
+    font: 20px/30px "PT Serif", Georgia, serif;
+        font-weight: normal;
+        font-family: "PT Serif", Georgia, serif;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-overflow: ellipsis !important;
+}

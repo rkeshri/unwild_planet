@@ -6775,3 +6775,19 @@ width:43px !important
   max-width: 90vw;
 } 
 
+.mb_20{
+  margin-bottom: 20px;
+}
+.mb_30{
+  margin-bottom: 30px;
+}
+
+.mb_40{
+  margin-bottom: 40px;
+}
+.pd_0{
+  padding: 0px;
+}
+a{
+  cursor: pointer !important;
+}

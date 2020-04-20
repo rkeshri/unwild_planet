@@ -26,7 +26,7 @@
       "price": "45000",
       "images": [
         {
-          "url": "https://i.picsum.photos/id/1002/4312/2868.jpg"
+          "url": "https://picsum.photos/seed/picsum/200/300"
         },
         {
           "url": "https://i.picsum.photos/id/1003/1181/1772.jpg"
@@ -44,7 +44,7 @@
       "price": "8500",
       "images": [
         {
-          "url": "https://i.picsum.photos/id/10/2500/1667.jpg"
+          "url": "https://picsum.photos/200/300/?blur"
         },
         {
           "url": "https://i.picsum.photos/id/1/5616/3744.jpg"

@@ -30,35 +30,77 @@ export default class CollageComponent extends Component {
       });
   };
 
-  goToPackageDetail=(id)=>{
-    Utility.HandlePageClick(
-      this.props,
-      "packages/context="+id
-    )
-  }
+  goToPackageDetail = (id) => {
+    Utility.HandlePageClick(this.props, "packages/context=" + id);
+  };
 
   render() {
     return (
       <div className="container">
-       
-        <ul class="gallery_box">
+        {/* <ul class="gallery_box"> */}
+        <div className="row">
           {this.state.gallaryData !== [] ? (
-            this.state.gallaryData.map((item) => {
+            this.state.gallaryData.map((item, key) => {
               return (
-                <li>
-                  <a  onClick={() => Utility.HandlePageClick(this.props,  "packages/context="+item.id)}>
-                    <img src={item.images[0].url} className="responsive" />
-                    <div class="box_data">
-                      <span>{item.title}</span>
-                    </div>
-                  </a>
-                </li>
+                // <li>
+                key == 0 ? (
+                  <div className="col-md-6 mb_20 pd_0">
+                    <a
+                      onClick={() =>
+                        Utility.HandlePageClick(
+                          this.props,
+                          "packages/context=" + item.id
+                        )
+                      }
+                    >
+                      <img
+                        src={item.images[0].url}
+                        className="responsive"
+                        width="100%"
+                        height="100%"
+                      />
+                      {/* <div class="box_data"> */}
+                      <div className="bottom-part">
+                        {/* <span className="card_txt">{item.title}</span> */}
+                        <span>{item.title}</span>
+                      </div>
+                    </a>
+                  </div>
+                ) : (
+                  <div className="col-md-3 mb_20 pd_0">
+                    {/* <div className="row">
+                      <div className="col-md-6 mb_20"> */}
+                        <a
+                          onClick={() =>
+                            Utility.HandlePageClick(
+                              this.props,
+                              "packages/context=" + item.id
+                            )
+                          }
+                        >
+                          <img
+                            src={item.images[0].url}
+                            className="responsive"
+                            width="100%"
+                            height="100%"
+                          />
+                          {/* <div class="box_data"> */}
+                          <div className="bottom-part">
+                            <span>{item.title}</span>
+                          </div>
+                        </a>
+                      {/* </div>
+                    </div> */}
+                  </div>
+                )
+                // </li>
               );
             })
           ) : (
             <h1>No Packages found</h1>
           )}
-        </ul>
+          {/* </ul> */}
+        </div>
       </div>
     );
   }
