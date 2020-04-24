@@ -157,7 +157,7 @@ export default class PackageDetailComponent extends Component {
                                 <React.Fragment>
                                   <div className="row">
                                     <div className="col-md-4">
-                                      <img src={item.day_img} />
+                                      <img src={item.day_img} className="mb_20" alt="" />
                                     </div>
                                     <div className="col-md-8">
                                       <h4>{item.day}</h4>

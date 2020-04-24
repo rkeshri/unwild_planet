@@ -20,6 +20,13 @@ import './assets/css/style.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+//carousel import
+//import  "jquery";
+
+
+import 'owl.carousel/dist/assets/owl.carousel.css';  
+import 'owl.carousel/dist/assets/owl.theme.default.css'; 
+
 
 //import './assets/js/owl.carousel.min.js'
 

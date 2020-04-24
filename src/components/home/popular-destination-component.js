@@ -24,6 +24,7 @@ export default class PopularDestinationComponent extends Component {
       .get(global.url + "/packages")
       .then(response => {
         if (response.data.length > 0) {
+         // console.log("get data========"+JSON.stringify(response.data));
           this.setState({ packages: response.data });
         }
       })
@@ -58,8 +59,8 @@ export default class PopularDestinationComponent extends Component {
             </div>
           </div>
           {/* <div className="row"> */}
-            {/* <CarouselComponent data={this.state.packages} {...this.props}/> */}
-            <DynamicSlides  {...this.props}/>
+            <CarouselComponent data={this.state.packages} {...this.props}/>
+            {/* <DynamicSlides  {...this.props}/> */}
             
             {/* <CardComponent data={this.state.packages}  /> */}
             

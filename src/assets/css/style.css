@@ -6724,7 +6724,7 @@ width:43px !important
 
 /****************************Slider CSS strats here*********************************/
 
-.slick-slide slick-active slick-current{
+/* .slick-slide slick-active slick-current{
   width:30% !important
 
 }
@@ -6746,10 +6746,10 @@ width:43px !important
   width:1030px !important
 } */
 
-.slick-slide div {
+/*.slick-slide div {
   display: table-cell;
   vertical-align: middle;
-}
+} */
 .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"]{
   padding:0 !important
 }
@@ -6790,4 +6790,23 @@ width:43px !important
 }
 a{
   cursor: pointer !important;
+}
+
+
+/***************************************** carousel card****************************/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100% !important;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card img{
+  max-width: 100%;
+  max-height: 100%;
+  /* height: 50%; */
+  object-fit:cover;
 }
