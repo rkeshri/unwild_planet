@@ -25,7 +25,7 @@ export default class Header extends Component {
                           )
                         }
                       >
-                        <img src={require("../assets/img/unwild_planet_logo_Brown.svg")} alt="Unwild Planet Logo" />
+                        <img src={require("../assets/img/unwild_planet_logo_Brown.svg")} alt="Unwild Planet Logo" className="img-responsive"/>
                       </a>
                     </div>
                   </div>

@@ -10,14 +10,14 @@ export default class searchPopupComponent extends Component {
     render() {
         return (
             // <!-- slider_area_start -->
-    <div className="slider_area">
+    <div className="slider_area container-fluid">
         <div className="slider_active">
             <div className="single_slider  d-flex align-items-center slider_bg_1 overlay">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-xl-12 col-md-12">
                             <div className="slider_text text-center">
-                                <h3>Indonesia</h3>
+                                <h3>Authentic and Meaningful Experiences</h3>
                                 <p>Pixel perfect design with awesome contents</p>
                                 <a href="#" className="boxed-btn3">Explore Now</a>
                             </div>

@@ -1,0 +1,77 @@
+.banner {
+        position: relative;
+        overflow: hidden;
+        height: 450px;
+        clear: both;
+}
+
+.banner-info {
+        padding: 0;
+        position: absolute;
+        top: 30%;
+        width: 100%;
+    }
+    .banner-info .title  {
+        font-size: 80px;
+        font-family: Raleway;
+        text-align: center;
+        color: #fff;
+        font-weight: 800;
+        margin: 0;
+    }
+    .banner-info .title2 {
+        font-size: 20px;
+        font-family: Raleway;
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+        margin: 0;
+    }
+    .banner-info h5 {
+        font-size: 20px;
+        font-family: Raleway;
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+        margin: 0;
+    }
+    .all-attraction {
+        background-color: rgba(0,0,0,0.6);
+        width: 101%;
+        padding: 28px 0;
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        display: block;
+    }
+    .all-attraction ul li span {
+        font-size: 16px;
+        color: #ffbd00;
+        text-align: center;
+        font-family: Verdana;
+    }
+    .all-attraction ul li p {
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        font-family: Verdana;
+    }
+    .all-attraction ul li span {
+        font-size: 16px;
+        color: #ffbd00;
+        text-align: center;
+        font-family: Verdana;
+    }
+
+    @media (max-width: 767px) {
+        .banner-info .title  {
+            font-size: 30px;
+      }
+      .all-attraction{
+          width:103%;
+        bottom:90px !important
+      }
+      .banner{
+          height: 399px;
+      }
+    }

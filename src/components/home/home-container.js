@@ -5,6 +5,7 @@ import PopularDestination from "./popular-destination-component";
 //import PopularPlaces from "./popular-place-component";
 import NewsLetter from "./newsletter-component";
 import CollageComponent from './collage_component';
+import TourWithLocalGuides from './tour_with_local_guide'
 import $ from 'jquery';
 
 
@@ -49,7 +50,8 @@ export default class HomeContainer extends Component {
       <React.Fragment>
         <SliderComponent />
         <ToGoComponent />
-        <PopularDestination title={"Explore By Theme"} moveSlider={this.moveSlider} {...this.props}/>
+        <PopularDestination title={"Our Favorite Trips"} moveSlider={this.moveSlider} {...this.props}/>
+        <TourWithLocalGuides {...this.props}/>
         <NewsLetter />
         <CollageComponent {...this.props}/>
         <PopularDestination title={"Explore By Location"} moveSlider={this.moveSlider} {...this.props}/>

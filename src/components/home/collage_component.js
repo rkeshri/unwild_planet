@@ -36,7 +36,7 @@ export default class CollageComponent extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container-fluid">
         {/* <ul class="gallery_box"> */}
         <div className="row">
           {this.state.gallaryData !== [] ? (
@@ -44,7 +44,7 @@ export default class CollageComponent extends Component {
               return (
                 // <li>
                 key == 0 ? (
-                  <div className="col-md-6 mb_20 pd_0">
+                  <div className="col-md-6 mb_20 pd_0 zoomin">
                     <a
                       onClick={() =>
                         Utility.HandlePageClick(
@@ -67,7 +67,7 @@ export default class CollageComponent extends Component {
                     </a>
                   </div>
                 ) : (
-                  <div className="col-md-3 mb_20 pd_0">
+                  <div className="col-md-3 mb_20 pd_0 zoomin">
                     {/* <div className="row">
                       <div className="col-md-6 mb_20"> */}
                         <a

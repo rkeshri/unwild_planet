@@ -46,10 +46,10 @@ export default class PopularDestinationComponent extends Component {
   render() {
     return (
       <div className="popular_destination_area">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row justify-content-center">
             <div className="col-lg-6">
-              <div className="section_title text-center mb_70">
+              <div className="section_title text-center mb_20">
                 <h3>{this.props.title}</h3>
                 <p>
                   Suffered alteration in some form, by injected humour or good
@@ -70,7 +70,7 @@ export default class PopularDestinationComponent extends Component {
           <div className="col-lg-12 col-md-6"></div>
                         <div className="col-lg-12 col-md-6">
                             <div className="more_place_btn text-center">
-                                <a className="boxed-btn4" onClick={this.GetPackagesList}>More Places</a>
+                                <a className="boxed-btn4" onClick={this.GetPackagesList}>More Trips</a>
                             </div>
                         </div>
                     </div>

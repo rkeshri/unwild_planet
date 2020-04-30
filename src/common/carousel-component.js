@@ -35,7 +35,7 @@ export default class CarouselComponent extends Component {
                 //   <h4>{item.title}</h4>
                 // </div>
 
-                <div className="card" onClick={() =>
+                <div className="card zoomin" onClick={() =>
                   Utility.HandlePageClick(
                     this.props,
                     "packages/context=" + item.id
