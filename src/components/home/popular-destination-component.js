@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import CardComponent from "../../common/card-component";
 import CarouselComponent from "../../common/carousel-component";
-import DynamicSlides from '../../common/dynamic-slides'
+import DynamicSlides from "../../common/dynamic-slides";
 import global from "../../global";
 import Utility from "../../utility/index";
 import axios from "axios";
@@ -10,7 +10,7 @@ export default class PopularDestinationComponent extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      packages: []
+      packages: [],
     };
   }
 
@@ -22,26 +22,23 @@ export default class PopularDestinationComponent extends Component {
     const that = this;
     axios
       .get(global.url + "/packages")
-      .then(response => {
+      .then((response) => {
         if (response.data.length > 0) {
-         // console.log("get data========"+JSON.stringify(response.data));
+          // console.log("get data========"+JSON.stringify(response.data));
           this.setState({ packages: response.data });
         }
       })
 
-      .catch(function(error) {
+      .catch(function (error) {
         console.log("In error" + error);
         that.setState({ failureMessage: "Please try after some time" });
       });
   };
 
-  GetPackagesList=()=>{
+  GetPackagesList = () => {
     //console.log("props==="+JSON.stringify(this.props))
-    Utility.HandlePageClick(
-      this.props,
-      "packages/list/1"
-    )
-  }
+    Utility.HandlePageClick(this.props, "packages/list/1");
+  };
 
   render() {
     return (
@@ -58,22 +55,17 @@ export default class PopularDestinationComponent extends Component {
               </div>
             </div>
           </div>
-          {/* <div className="row"> */}
-            <CarouselComponent data={this.state.packages} {...this.props}/>
-            {/* <DynamicSlides  {...this.props}/> */}
-            
-            {/* <CardComponent data={this.state.packages}  /> */}
-            
-           
-          {/* </div> */}
+          <CarouselComponent data={this.state.packages} {...this.props} />
           <div className="row">
-          <div className="col-lg-12 col-md-6"></div>
-                        <div className="col-lg-12 col-md-6">
-                            <div className="more_place_btn text-center">
-                                <a className="boxed-btn4" onClick={this.GetPackagesList}>More Trips</a>
-                            </div>
-                        </div>
-                    </div>
+            <div className="col-lg-12 col-md-6"></div>
+            <div className="col-lg-12 col-md-6">
+              <div className="more_place_btn text-center">
+                <a className="boxed-btn4" onClick={this.GetPackagesList}>
+                  More Trips
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

@@ -6,10 +6,21 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import Utility from "../utility/index";
 
 const options = {
-  autoplay: true,
+  autoplay: false,
   loop: true,
   nav: true,
-  item: 5,
+  item: 4,
+  responsive:{
+    0:{
+        items:1
+    },
+    600:{
+        items:3
+    },
+    1000:{
+        items:4
+    }
+}
 };
 export default class CarouselComponent extends Component {
   constructor(props) {
@@ -22,7 +33,7 @@ export default class CarouselComponent extends Component {
   };
 
   render() {
-    console.log("in carousel======" + JSON.stringify(this.props, null, 4));
+    // console.log("in carousel======" + JSON.stringify(this.props, null, 4));
 
     return (
       <div className="container-fluid">
@@ -30,17 +41,15 @@ export default class CarouselComponent extends Component {
           <OwlCarousel className="owl-theme" margin={5} {...options} nav>
             {this.props.data.map((item) => {
               return (
-                // <div className="item">
-                //   <img className="img" src={item.images[0].url} alt="" />
-                //   <h4>{item.title}</h4>
-                // </div>
-
-                <div className="card zoomin" onClick={() =>
-                  Utility.HandlePageClick(
-                    this.props,
-                    "packages/context=" + item.id
-                  )
-                }>
+                <div
+                  className="card zoomin"
+                  onClick={() =>
+                    Utility.HandlePageClick(
+                      this.props,
+                      "packages/context=" + item.id
+                    )
+                  }
+                >
                   <img
                     src={item.images[0].url}
                     alt="Avatar"

@@ -1,12 +1,49 @@
 import React, { Component } from "../../node_modules/react";
 import Utility from "../utility/index";
+import $ from "jquery";
 
 export default class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      socialIconDisplay: false,
+    };
   }
 
+  componentDidMount = () => {
+    const that = this;
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();     
+      // if (scroll >= 500) {
+      //   // $(".social_links").addClass("social-icon-bar");
+      //   that.setState({ socialIconDisplay: true });
+      // } else {
+      //   // $(".social_links").removeClass("social-icon-bar");
+      //   that.setState({ socialIconDisplay: false });
+      // }
+
+      if ($(window).width() > 700 && scroll >= 500) {
+    
+        that.setState({ socialIconDisplay: true });
+      }
+      else{
+        that.setState({ socialIconDisplay: false });
+      }
+
+      $(window).resize(function () {
+        if ($(window).width() > 700 && scroll >= 500) {
+          that.setState({ socialIconDisplay: true });
+        }
+        else{
+          that.setState({ socialIconDisplay: false }); 
+        }
+      });
+    });
+
+    
+
+    
+  };
   render() {
     return (
       <header>
@@ -19,13 +56,14 @@ export default class Header extends Component {
                     <div className="logo">
                       <a
                         onClick={() =>
-                          Utility.HandlePageClick(
-                            this.props,
-                            "home"
-                          )
+                          Utility.HandlePageClick(this.props, "home")
                         }
                       >
-                        <img src={require("../assets/img/unwild_planet_logo_Brown.svg")} alt="Unwild Planet Logo" className="img-responsive"/>
+                        <img
+                          src={require("../assets/img/unwild_planet_logo_Brown.svg")}
+                          alt="Unwild Planet Logo"
+                          className="img-responsive"
+                        />
                       </a>
                     </div>
                   </div>
@@ -37,10 +75,7 @@ export default class Header extends Component {
                             <a
                               className="active"
                               onClick={() =>
-                                Utility.HandlePageClick(
-                                  this.props,
-                                  "home"
-                                )
+                                Utility.HandlePageClick(this.props, "home")
                               }
                             >
                               home
@@ -49,10 +84,7 @@ export default class Header extends Component {
                           <li>
                             <a
                               onClick={() =>
-                                Utility.HandlePageClick(
-                                  this.props,
-                                  "about"
-                                )
+                                Utility.HandlePageClick(this.props, "about")
                               }
                             >
                               About
@@ -62,31 +94,23 @@ export default class Header extends Component {
                             <a
                               className=""
                               onClick={() =>
-                                Utility.HandlePageClick(
-                                  this.props,
-                                  "/"
-                                )
+                                Utility.HandlePageClick(this.props, "/")
                               }
                             >
                               Destination
                             </a>
                           </li>
-                          {/* <li>
-                            <a href="#">
-                              pages <i className="ti-angle-down"></i>
-                            </a>
-                            <ul className="submenu">
-                              <li>
-                                <a href="destination_details.html">
-                                  Destinations details
-                                </a>
-                              </li>
-                              <li>
-                                <a href="elements.html">elements</a>
-                              </li>
-                            </ul>
-                          </li> */}
                           <li>
+                            <a
+                              className=""
+                              onClick={() =>
+                                Utility.HandlePageClick(this.props, "/")
+                              }
+                            >
+                              Blog
+                            </a>
+                          </li>
+                          {/* <li>
                             <a href="#">
                               blog <i className="ti-angle-down"></i>
                             </a>
@@ -116,18 +140,6 @@ export default class Header extends Component {
                                 </a>
                               </li>
                             </ul>
-                          </li>
-                          {/* <li>
-                            <a
-                              onClick={() =>
-                                Utility.HandlePageClick(
-                                  this.props,
-                                  "/"
-                                )
-                              }
-                            >
-                              Contact
-                            </a>
                           </li> */}
                         </ul>
                       </nav>
@@ -138,7 +150,7 @@ export default class Header extends Component {
                       <div className="number">
                         <p>
                           {" "}
-                          <i className="fa fa-phone"></i> 10(256)-928 256
+                          <i className="fa fa-phone"></i>
                         </p>
                       </div>
                       <div className="social_links d-none d-xl-block">
@@ -186,6 +198,27 @@ export default class Header extends Component {
                 </div>
               </div>
             </div>
+            {this.state.socialIconDisplay === true ? (
+              <div class="social-icon-bar">
+                <a href="#" class="facebook">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#" class="twitter">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#" class="google">
+                  <i class="fa fa-google"></i>
+                </a>
+                <a href="#" class="linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="#" class="youtube">
+                  <i class="fa fa-youtube"></i>
+                </a>
+              </div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </header>

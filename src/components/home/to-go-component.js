@@ -36,12 +36,12 @@ export default class ToGoComponent extends Component {
         <div className="where_togo_area">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-3">
+              <div className="col-lg-4">
                 <div className="form_area">
-                  <h3>Have a place in mind?</h3>
+                  <h3>Have something in mind?</h3>
                 </div>
               </div>
-              <div className="col-lg-9">
+              <div className="col-lg-8">
                 <div className="search_wrap">
                   <form className="search_form" action="#">
                     <div className="input_field">
@@ -52,6 +52,7 @@ export default class ToGoComponent extends Component {
                       options={options}
                     /> */}
                       <Search />
+                      <p>Ex: Adventures,Antarctica,Climb Mount Everest.</p>
                     </div>
                     {/* <div className="date_input_field">
                     <DatePicker
