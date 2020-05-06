@@ -10,17 +10,17 @@ const options = {
   loop: true,
   nav: true,
   item: 4,
-  responsive:{
-    0:{
-        items:1
+  responsive: {
+    0: {
+      items: 1,
     },
-    600:{
-        items:3
+    600: {
+      items: 3,
     },
-    1000:{
-        items:4
-    }
-}
+    1000: {
+      items: 4,
+    },
+  },
 };
 export default class CarouselComponent extends Component {
   constructor(props) {
@@ -59,6 +59,15 @@ export default class CarouselComponent extends Component {
                     <h4>
                       <b>{item.title}</b>
                     </h4>
+                    <h5>
+                      {item.days} Days {"  "}{"    "}
+                      <span class="fa fa-star rating_checked"></span>
+                      <span class="fa fa-star rating_checked"></span>
+                      <span class="fa fa-star rating_checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </h5>
+                    <h5>From- ₹{item.price}</h5>
                     {/* <p>Architect & Engineer</p> */}
                   </div>
                 </div>

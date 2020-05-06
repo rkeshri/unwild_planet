@@ -38,13 +38,13 @@ export default class CollageComponent extends Component {
     return (
       <div className="container-fluid">
         {/* <ul class="gallery_box"> */}
-        <div className="row">
+        {/* <div className="row"> */}
           {this.state.gallaryData !== [] ? (
             this.state.gallaryData.map((item, key) => {
               return (
                 // <li>
                 key == 0 ? (
-                  <div className="col-md-6 mb_20 pd_0 zoomin">
+                  <div className="col-md-6 mb_20  zoomin">
                     <a
                       onClick={() =>
                         Utility.HandlePageClick(
@@ -67,7 +67,7 @@ export default class CollageComponent extends Component {
                     </a>
                   </div>
                 ) : (
-                  <div className="col-md-3 mb_20 pd_0 zoomin">
+                  <div className="col-md-3 mb_20  zoomin">
                     {/* <div className="row">
                       <div className="col-md-6 mb_20"> */}
                         <a
@@ -100,7 +100,7 @@ export default class CollageComponent extends Component {
             <h1>No Packages found</h1>
           )}
           {/* </ul> */}
-        </div>
+        {/* </div> */}
       </div>
     );
   }

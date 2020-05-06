@@ -12,7 +12,7 @@
         width: 100%;
     }
     .banner-info .title  {
-        font-size: 80px;
+        font-size: 32px;
         font-family: Raleway;
         text-align: center;
         color: #fff;
@@ -68,7 +68,7 @@
 
     @media (max-width: 767px) {
         .banner-info .title  {
-            font-size: 30px;
+            font-size: 20px;
       }
       .all-attraction{
           width:103%;

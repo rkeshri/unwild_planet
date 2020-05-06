@@ -6,7 +6,7 @@ import PopularDestination from "./popular-destination-component";
 import NewsLetter from "./newsletter-component";
 import CollageComponent from "./collage_component";
 import TourWithLocalGuides from "./tour_with_local_guide";
-import TestimonialComponent from './testimonial';
+import TestimonialComponent from "./testimonial";
 import $ from "jquery";
 
 export default class HomeContainer extends Component {
@@ -14,23 +14,33 @@ export default class HomeContainer extends Component {
     super(props);
     this.state = {};
   }
-  componentDidMount=()=>{
-    
-  }
+  componentDidMount = () => {};
 
   render() {
     return (
       <React.Fragment>
         <SliderComponent />
+        <div className="container-fluid">
+          <div className="panel panel-default mt-10">
+            <div className="panel-body">
+              <p>
+                <b>Covid19 Message-</b>Travel would never be the same as put out
+                by researchers and the wider impact on our lifestyle is immense.
+                We have worked harder to bring stringent measures to keep your
+                holidays Safe and Sustainable with appropriate social distancing
+              </p>
+            </div>
+          </div>
+        </div>
         <ToGoComponent />
         <PopularDestination title={"Our Favorite Trips"} {...this.props} />
         <TourWithLocalGuides {...this.props} />
         <NewsLetter />
-        <CollageComponent {...this.props} />
-        <PopularDestination title={"Explore By Location"} {...this.props} />
-        <PopularDestination title={"Explore By Motivation"} {...this.props} />
-        <PopularDestination title={"Popular Location"} {...this.props} />
-        <TestimonialComponent {...this.props}/>
+        {/* <CollageComponent {...this.props} /> */}
+        <PopularDestination title={"Experiences Closer To Home"} {...this.props} />
+        {/* <PopularDestination title={"Explore By Motivation"} {...this.props} />
+        <PopularDestination title={"Popular Location"} {...this.props} /> */}
+        <TestimonialComponent {...this.props} />
         {/* <PopularDestination title={"Popular Packages"} moveSlider={this.moveSlider} {...this.props}/> */}
         {/* <PopularDestination title={"Explore By Theme"} {...this.props}/>
         {/* <PopularPlaces /> */}

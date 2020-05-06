@@ -14,8 +14,10 @@ const TourWithLocalGuideComponent = (props) => {
 
         <div className="row banner-info  all-attraction">
           <div className="col-md-6 col-xs-12">
-            <div class="title">Tour</div>
-            <div class="title2">with local experts</div>
+            <div class="title">
+              Intrinsically planned and operated trips by{" "}
+            </div>
+            <div class="title2">our Local Experts</div>
           </div>
           <div className="col-md-6 col-xs-12 local-guide-points">
             <h5>Fully Custimizable</h5>
@@ -25,15 +27,16 @@ const TourWithLocalGuideComponent = (props) => {
         </div>
       </div>
       <div className="row justify-content-center">
-            <div className="col-lg-6">
-              <div className="section_title text-center mb_20">
-                <h3>Celebrate the joy of exploration</h3>
-                <p>
-                  Carefully curated trips for you to
-                </p>
-              </div>
-            </div>
+        <div className="col-lg-6">
+          <div className="section_title text-center mb_20">
+            <h3>Celebrate the joy of exploration</h3>
+            <p>
+              Take a pick of what is your calling for the next trip and we will
+              suggest some of our best options to choose from.
+            </p>
           </div>
+        </div>
+      </div>
       <div className="row">
         <div className=" col-md-2 col-xs-6">
           <div className="panel panel-default">

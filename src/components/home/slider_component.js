@@ -18,7 +18,7 @@ export default class searchPopupComponent extends Component {
                         <div className="col-xl-12 col-md-12">
                             <div className="slider_text text-center">
                                 <h3>Authentic and Meaningful Experiences</h3>
-                                <p>Pixel perfect design with awesome contents</p>
+                                <p>Discover the joy of venturing out of places where very few do</p>
                                 <a href="#" className="boxed-btn3">Explore Now</a>
                             </div>
                         </div>

@@ -49,8 +49,8 @@ export default class PopularDestinationComponent extends Component {
               <div className="section_title text-center mb_20">
                 <h3>{this.props.title}</h3>
                 <p>
-                  Suffered alteration in some form, by injected humour or good
-                  day randomised booth anim 8-bit hella wolf moon beard words.
+                  Take a pick of what is your calling for the next trip and we
+                  will suggest some of our best options to choose from.
                 </p>
               </div>
             </div>
