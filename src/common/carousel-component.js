@@ -21,6 +21,9 @@ const options = {
       items: 4,
     },
   },
+  navigationText:true,
+  // navigationText: ["◀ Left <strong>arrow</strong>","Right <strong>arrow</strong> ▶"]
+  
 };
 export default class CarouselComponent extends Component {
   constructor(props) {
@@ -41,36 +44,39 @@ export default class CarouselComponent extends Component {
           <OwlCarousel className="owl-theme" margin={5} {...options} nav>
             {this.props.data.map((item) => {
               return (
-                <div
-                  className="card zoomin"
-                  onClick={() =>
-                    Utility.HandlePageClick(
-                      this.props,
-                      "packages/context=" + item.id
-                    )
-                  }
-                >
-                  <img
-                    src={item.images[0].url}
-                    alt="Avatar"
-                    style={{ width: "100%" }}
-                  />
-                  <div className="container">
-                    <h4>
-                      <b>{item.title}</b>
-                    </h4>
-                    <h5>
-                      {item.days} Days {"  "}{"    "}
-                      <span class="fa fa-star rating_checked"></span>
-                      <span class="fa fa-star rating_checked"></span>
-                      <span class="fa fa-star rating_checked"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                    </h5>
-                    <h5>From- ₹{item.price}</h5>
-                    {/* <p>Architect & Engineer</p> */}
+                <a>
+                  <div
+                    className="card zoomin"
+                    onClick={() =>
+                      Utility.HandlePageClick(
+                        this.props,
+                        "packages/context=" + item.id
+                      )
+                    }
+                  >
+                    <img
+                      src={item.images[0].url}
+                      alt="Avatar"
+                      style={{ width: "100%" }}
+                    />
+                    <div className="container">
+                      <h4>
+                        <b>{item.title}</b>
+                      </h4>
+                      <h5>
+                        {item.days} Days {"  "}
+                        {"    "}
+                        <span class="fa fa-star rating_checked"></span>
+                        <span class="fa fa-star rating_checked"></span>
+                        <span class="fa fa-star rating_checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                      </h5>
+                      <h5>From- ₹{item.price}</h5>
+                      {/* <p>Architect & Engineer</p> */}
+                    </div>
                   </div>
-                </div>
+                </a>
               );
             })}
           </OwlCarousel>

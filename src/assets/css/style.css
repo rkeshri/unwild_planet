@@ -1324,7 +1324,8 @@ h3 {
 
 /* line 23, ../../Arafath/CL/December/231. Travel-02/HTML/scss/_slider.scss */
 .slider_area .single_slider {
-  height: 650px;
+  /* height: 650px; */
+  height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

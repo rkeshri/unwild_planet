@@ -10,7 +10,8 @@ export default class searchPopupComponent extends Component {
     render() {
         return (
             // <!-- slider_area_start -->
-    <div className="slider_area container-fluid">
+    // <div className="slider_area container-fluid">
+    <div className="slider_area">
         <div className="slider_active">
             <div className="single_slider  d-flex align-items-center slider_bg_1 overlay">
                 <div className="container">

@@ -42,7 +42,7 @@ export default class PackageDetailComponent extends Component {
                       return (
                         <button
                           type="button"
-                          className="btn col-xl-4 col-md-4 amenities"
+                          className="btn col-xl-4 col-md-4 col-xs-4 amenities"
                         >
                           {item.amenities}
                         </button>
@@ -57,7 +57,7 @@ export default class PackageDetailComponent extends Component {
                   PEOPLE!!!
                 </h5>
                 <div className="row">
-                  <div className="col-xl-3 col-md-3 col-sm-6">
+                  <div className="col-xl-3 col-md-3 col-xs-4">
                     <span>
                       <i
                         className="fa fa-circle-o-notch"

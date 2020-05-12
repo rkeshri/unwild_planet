@@ -7,6 +7,7 @@ import NewsLetter from "./newsletter-component";
 import CollageComponent from "./collage_component";
 import TourWithLocalGuides from "./tour_with_local_guide";
 import TestimonialComponent from "./testimonial";
+import SimpleMap from '../map/simple_map';
 import $ from "jquery";
 
 export default class HomeContainer extends Component {
@@ -38,6 +39,7 @@ export default class HomeContainer extends Component {
         <NewsLetter />
         {/* <CollageComponent {...this.props} /> */}
         <PopularDestination title={"Experiences Closer To Home"} {...this.props} />
+        <SimpleMap/>
         {/* <PopularDestination title={"Explore By Motivation"} {...this.props} />
         <PopularDestination title={"Popular Location"} {...this.props} /> */}
         <TestimonialComponent {...this.props} />
