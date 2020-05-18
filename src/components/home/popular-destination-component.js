@@ -44,7 +44,7 @@ export default class PopularDestinationComponent extends Component {
     return (
       <div className="popular_destination_area">
         <div className="container-fluid">
-          <div className="row justify-content-center">
+          <div className="row justify-content-center" id={this.props.sectionId}>
             <div className="col-lg-6">
               <div className="section_title text-center mb_20">
                 <h3>{this.props.title}</h3>

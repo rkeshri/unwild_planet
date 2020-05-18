@@ -25,8 +25,7 @@ export default class SinglePageLayout extends Component {
         {/****Master Container****/}
         <this.props.children
           masterState={this.state}
-          showLoginForm={this.showLoginForm}
-          showHeader={this.showHeader}
+         
           {...this.props}
         />
         
